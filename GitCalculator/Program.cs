@@ -11,8 +11,12 @@ namespace GitCalculator
             
             Console.WriteLine("Anna toinen numero");
             int toka = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Vastauksesi on:");
+            
+            Console.WriteLine("Summa:");
             Console.WriteLine(eka + toka);
+            
+            Console.WriteLine("Erotus:");
+            Console.WriteLine(eka - toka);
         }
     }
 }

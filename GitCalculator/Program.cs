@@ -6,26 +6,16 @@ namespace GitCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Anna ensimmäinen numero");
+            Console.Write("Anna ensimmäinen numero: ");
             int eka = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine("Anna toinen numero");
+            Console.Write("Anna toinen numero: ");
             int toka = Convert.ToInt32(Console.ReadLine());
-
-
-            Console.WriteLine("Kumman haluat tulostaa, 1: Summan vai 2: Erotuksen?");
-            int kolmas = Convert.ToInt32(Console.ReadLine());
-
-           if (kolmas == 1)
-            {
-                Console.WriteLine("Summa:");
-                Console.WriteLine(eka + toka);
-            }
-           if (kolmas == 2)
-            {
-                Console.WriteLine("Erotus:");
-                Console.WriteLine(eka - toka);
-            }
+            yhteenlasku(eka, toka);
+            Console.ReadLine();
+        }
+        public static void yhteenlasku(int eka, int toka)
+        {
+            Console.WriteLine(eka + toka);
         }
     }
 }
